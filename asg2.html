@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>asg2 srfulgha</title>
+    </head>
+
+    <body onload="main()">
+        <canvas id="webgl" width="700" height="700">
+        Please use a browser that supports "canvas"
+        </canvas>
+        <br>
+
+        <p>
+        I CHOOSE YOU CHARIZARD!!!
+
+        <p>
+        Camera      
+        <input type="range" min="-180" max="180"  value="0" class="slider" id="angleSlide"/>
+        <p>
+
+        Hover Height
+        <input type="range" min="-40" max="-30" value="-30" class="slider" id="CharBodySlide"/>
+        <p>
+
+        Tail Wag
+        <input type="range" min="-5" max="5" value="0" class="slider" id="CharTailSlide"/>
+        <p>
+
+        Wing Flap
+        <input type="range" min="20" max="60" value="40" class="slider" id="CharWingSlide"/>
+        <p>
+
+        Arms
+        <input type="range" min="-10" max="10" value="0" class="slider" id="CharArmsSlide"/>
+        <p>
+
+        Forarms
+        <input type="range" min="-20" max="20" value="0" class="slider" id="CharForearmsSlide"/>
+        <p>
+
+        All  Animation  <input type="button" value="On"  id="allOn"/>
+                        <input type="button" value="Off" id="allOff"/> <p>
+
+        Fly  Animation  <input type="button" value="On"  id="FlyOn"/>
+                        <input type="button" value="Off" id="FlyOff"/> <p></p>
+        Tail Animation  <input type="button" value="On"  id="TailOn"/>
+                        <input type="button" value="Off" id="TailOff"/> <p>
+        Fire Animation  <input type="button" value="On"  id="FireOn"/>
+                        <input type="button" value="Off" id="FireOff"/> <p>
+        Face Animation  <input type="button" value="On"  id="FaceOn"/>
+                        <input type="button" value="Off" id="FaceOff"/> <p>
+        Flap Animation  <input type="button" value="On"  id="FlapOn"/>
+                        <input type="button" value="Off" id="FlapOff"/> <p>
+        Limb Animation  <input type="button" value="On"  id="LimbOn"/>
+                        <input type="button" value="Off" id="LimbOff"/> <p>
+        Arm Animation   <input type="button" value="On"  id="ForeOn"/>
+                        <input type="button" value="Off" id="ForeOff"/> <p>
+        
+
+    
+        <input type="button" value="GET HYPEY" onclick="play()">
+        <input type="button" value="NO HYPEY" onclick="stop()">
+        <audio id="audio" src="LiamPiano.m4a"></audio>
+        <!-- <audio id="audio" src="145 Blue_s Theme.m4a"></audio> -->
+        <script>
+            function play() {
+                var audio = document.getElementById("audio");
+                audio.play();
+            }
+            function stop(){
+                var audio = document.getElementById("audio");
+                audio.pause();
+            }
+        </script>
+
+
+        <script src="lib/webgl-utils.js"></script>
+        <script src="lib/webgl-debug.js"></script>
+        <script src="lib/cuon-utils.js"></script>
+        <script src="lib/cuon-matrix-cse160.js"></script>
+        <script src="Triangle.js"></script>
+        <script src="Circle.js"></script>
+        <script src="Point.js"></script>
+        <script src="Cube.js"></script>
+        <script src="BlockyAnimal.js"></script>
+    </body>
+</html>
